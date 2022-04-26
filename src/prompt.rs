@@ -87,7 +87,7 @@ impl Hint for CommandHint {
 impl Prompt {
     /// Returns a new rustyline::Editor with history loaded in (if it exists)
     pub fn new() -> Self {
-        let mut editor = Editor::<EditorHinter>::new();
+        let mut editor = Editor::new();
         let hinter = EditorHinter {
             hints: playground_hints(),
         };
@@ -108,7 +108,7 @@ impl Prompt {
     pub fn save_history(&mut self) {
         let _ = self
             .editor
-            .save_history("history.txt")
+            .save_history("jacarex-history")
             .map_err(|err| eprintln!("Warning: problem saving history: {:?}", err));
     }
 }

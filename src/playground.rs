@@ -22,13 +22,13 @@ impl PlaygroundData {
     }
 
     fn print_help() {
-        println!("{} receives a word (or a list of word) and adds it to the set of test targets. Note that this mode trims its words.", "#addword".blue());
+        println!("{} receives a word (or a list of words) and adds it to the set of test targets. Note that this mode trims its words.", "#addword".blue());
         println!("{} adds the entire line after the command as a test target. Trailing whitespace will be kept.", "#addline".blue());
         println!(
             "{} reads the indicated file and saves it as a single test target.",
             "#readfile".blue()
         );
-        println!("{} clears all loaded test strings. If you just want to clean your terminal, Ctrl+L works.", "#clear".blue());
+        println!("{} clears all loaded test strings.", "#clear".blue());
     }
 
     fn load_from_file(&mut self, filename: &str) {
