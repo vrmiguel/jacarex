@@ -1,0 +1,26 @@
+#V2
+#addword
+#addword s
+#addword Japa
+J*
+Ja
+Japa
+a
+a*
+a.
+a..
+a..$
+k
+#clear
+ls
+sldas
+#readfile
+#help
+#he
+#help
+#h
+#help
+#addword João
+J...
+J..
+J..$
