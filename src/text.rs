@@ -14,7 +14,7 @@ impl AsRef<str> for Text {
 
 impl Text {
     pub fn is_line(&self) -> bool {
-        matches!(self, Text::Word(_))
+        matches!(self, Text::Line(_))
     }
 
     pub fn as_str(&self) -> &str {
